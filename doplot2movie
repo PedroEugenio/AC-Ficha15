@@ -1,0 +1,25 @@
+#!/usr/bin/env gnuplot
+set term png
+set xyplane 0
+set view equal xyz
+set xrange [-3000:3000]
+set yrange [-3000:3000]
+set zrange [-3000:3000]
+
+unset key
+#unset tics
+#unset border
+ficheiro="particles.dat"
+totaltime=120
+deltat=60
+iter=totaltime/deltat
+
+do for [ii=0:iter] {
+outputfile=sprintf('imagem%05.0f.png',ii) 
+set output outputfile
+splot ficheiro every :::ii::ii with points pointtype 6 pointsize 2
+print "ii=",ii
+}
+
+!ffmpeg -i imagem%05d.png -c:v libx264 -vf fps=25 -pix_fmt yuv420p out.mp4
+pause -1
