@@ -77,11 +77,6 @@ struct data versor(struct data s2, struct data s1){
 }
 
 
-void open_file(){
-    
-}
-
-
 int main(){
 
     struct data line_body[NUM_BODIES];  // Array with data from each body
@@ -107,18 +102,18 @@ int main(){
         //printf("%.1f %.1f %.1f %.1f \n", line_body[i].x, line_body[i].y, line_body[i].z, line_body[i].m);
         i++;
     }
-    
+       
+   fclose(fptr);
+
+ 
     // Print initial values (total time and delta time)
     printf("%i %i\n", init.total_time, init.delta);
-
+    
     // Print all values for our variables (x,y,z,m)
     //pragma for
     for(int i=0; i<NUM_BODIES; i++){
         printf("%.1f %.1f %.1f %.1f \n", line_body[i].x, line_body[i].y, line_body[i].z, line_body[i].m);
     }
-
-    
-   fclose(fptr);
 
     /* line_body[1].x=0;
     line_body[1].y=0;
