@@ -10,7 +10,7 @@
 #define NUM_BODIES_PARAM 4002
 #define NUM_BODIES 1000
 
-#define G 9.8
+#define G 6.674E-1
 
 struct data{
     float x;
@@ -129,6 +129,8 @@ int main(){
 
     float force;
 
+    struct force fi[NUM_BODIES];
+
     struct Matrix *mat;
 
 
@@ -190,6 +192,22 @@ int main(){
     }
     clock_gettime(CLOCK_MONOTONIC, &end);
     printf("Total time: %LF s \n", timespecInS(timespecDiff(end, start)));
+
+    // Calcule of fi force
+    fi[0].x=0;
+    fi[0].y=0;
+    fi[0].z=0;
+    #pragma omp parallel for
+    for(int i=0; i<NUM_BODIES ; i++){
+        for(int j=0; j<NUM_BODIES && j!=i; j++){
+            fi[i].x+=mat->values[(i * mat->width) + j].x;
+            fi[i].y+=mat->values[(i * mat->width) + j].y;
+            fi[i].z+=mat->values[(i * mat->width) + j].z;
+        }
+    }
+
+    printf("End of program! \n");
+
 
     free(mat->values);
     free(mat);
