@@ -129,6 +129,9 @@ int main(){
 
     float force;
 
+    struct force a[NUM_BODIES];
+    struct force v[NUM_BODIES];
+
     struct force fi[NUM_BODIES];
 
     struct Matrix *mat;
@@ -193,7 +196,7 @@ int main(){
     clock_gettime(CLOCK_MONOTONIC, &end);
     printf("Total time: %LF s \n", timespecInS(timespecDiff(end, start)));
 
-    // Calcule of fi force
+    // Calculation of fi force
     fi[0].x=0;
     fi[0].y=0;
     fi[0].z=0;
@@ -203,6 +206,19 @@ int main(){
             fi[i].x+=mat->values[(i * mat->width) + j].x;
             fi[i].y+=mat->values[(i * mat->width) + j].y;
             fi[i].z+=mat->values[(i * mat->width) + j].z;
+        }
+    }
+
+    // Calculation of acelaration
+    a[0].x=0;
+    a[0].y=0;
+    a[0].z=0;
+    #pragma omp parallel for
+    for(int i=0; i<NUM_BODIES ; i++){
+        for(int j=0; j<NUM_BODIES && j!=i; j++){
+            a[i].x=fi[i].x/line_body[i].m;
+            a[i].y=fi[i].y/line_body[i].m;
+            a[i].z=fi[i].z/line_body[i].m;
         }
     }
 
