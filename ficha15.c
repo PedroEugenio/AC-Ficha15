@@ -86,29 +86,27 @@ int main(){
     FILE *fptr;
     fptr = fopen("particles.dat","r");  // Open the file
 
-    if(fptr == NULL)
-    {
-        perror("fopen()"); 
-        exit(1);             
-    }
-    // Saves the values from .dat file to the initial variables
-    fscanf(fptr, "%i %i", &init.total_time, &init.delta);
-   
-    printf("%.1f %.1f %.1f %.1f \n", line_body[0].x, line_body[0].y, line_body[0].z, line_body[0].m);
-    // Verify if the document reached to an end
-    while( !feof (fptr) ){ 
-        // Saves the values from .dat file to the variables
-        fscanf(fptr, "%f %f %f %f", &line_body[i].x, &line_body[i].y, &line_body[i].z, &line_body[i].m);
-        //printf("%.1f %.1f %.1f %.1f \n", line_body[i].x, line_body[i].y, line_body[i].z, line_body[i].m);
-        i++;
-    }
+        if(fptr == NULL)
+        {
+            perror("fopen()"); 
+            exit(1);             
+        }
+        // Saves the values from .dat file to the initial variables
+        fscanf(fptr, "%i %i", &init.total_time, &init.delta);
+    
+        // Verify if the document reached to an end
+        while( !feof (fptr) ){ 
+            // Saves the values from .dat file to the variables
+            fscanf(fptr, "%f %f %f %f", &line_body[i].x, &line_body[i].y, &line_body[i].z, &line_body[i].m);
+            //printf("%.1f %.1f %.1f %.1f \n", line_body[i].x, line_body[i].y, line_body[i].z, line_body[i].m);
+            i++;
+        }
        
    fclose(fptr);
 
  
     // Print initial values (total time and delta time)
     printf("%i %i\n", init.total_time, init.delta);
-    
     // Print all values for our variables (x,y,z,m)
     //pragma for
     for(int i=0; i<NUM_BODIES; i++){
