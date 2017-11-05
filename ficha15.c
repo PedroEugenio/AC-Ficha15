@@ -7,33 +7,16 @@
     #include<omp.h>
 #endif
 
-#ifdef _OPENMP
-    #include<omp.h>
-#endif
-
 #define NUM_BODIES_PARAM 4002
 #define NUM_BODIES 1000
-#define G 6.674E-11
 
-#define G 6.674E-2
+#define G 9.8
 
 struct data{
     float x;
     float y;
     float z;
     float m;
-};
-
-typedef struct force{
-    float x;
-    float y;
-    float z;
-}FORCE;
-
-struct Matrix{
-    FORCE * values;
-    int width;
-    int height;
 };
 
 struct initial_conditions{
@@ -141,16 +124,6 @@ int main(){
 
     struct data line_body[NUM_BODIES];  // Array with data from each body
     struct data temp;
-<<<<<<< HEAD
-
-    struct force f[NUM_BODIES][NUM_BODIES];
-    float force_f;
-    struct force fi[NUM_BODIES];
-
-    struct Matrix *mat;
-
-=======
->>>>>>> working
     int i=0;
     struct initial_conditions init;
 
@@ -194,14 +167,8 @@ int main(){
     mat->width  = NUM_BODIES;
     mat->height = NUM_BODIES;
 
-<<<<<<< HEAD
-    // Print initial values (total time and delta time)
-    printf("%i %i\n", init.total_time, init.delta);
-    // Print all values for our variables (x,y,z,m)
-=======
     clock_gettime(CLOCK_MONOTONIC, &start);
     #pragma omp parallel for
->>>>>>> working
     for(int i=0; i<NUM_BODIES; i++){
         for(int j=0; j<NUM_BODIES; j++){
             force=(G*line_body[i].m*line_body[j].m)/sqr_module(module(diff(line_body[j],line_body[i])));
@@ -216,7 +183,6 @@ int main(){
 
     clock_gettime(CLOCK_MONOTONIC, &start);
     // Prints all the values for f[i][j]
-    #pragma omp parallel for
     for(int i=0; i<NUM_BODIES; i++){
         for(int j=0; j<NUM_BODIES; j++){
             printf("f[%i][%i]: x: %.10f y: %.10f z: %.10f \n",i,j, mat->values[(i * mat->width) + j].x,mat->values[(i * mat->width) + j].y=force*temp.y,mat->values[(i * mat->width) + j].z=force*temp.z);
@@ -225,53 +191,7 @@ int main(){
     clock_gettime(CLOCK_MONOTONIC, &end);
     printf("Total time: %LF s \n", timespecInS(timespecDiff(end, start)));
 
-<<<<<<< HEAD
-    /* // The total number of elements in the matrix is
-    // the number of columns times the number of rows
-    mat->values = malloc(NUM_BODIES * NUM_BODIES * sizeof(struct force));
-    if (mat->values == NULL) {
-        fprintf(stderr, "Out-of-memory");
-    }
-    mat->width  = NUM_BODIES;
-    mat->height = NUM_BODIES; */
-
-    /* //#pragma omp parallel for
-    for(int i=0; i<NUM_BODIES; i++){
-        for(int j=0; j<NUM_BODIES; j++){
-            force_f=(G*line_body[i].m*line_body[j].m)/sqr_module(module(diff(line_body[j],line_body[i])));
-            temp=versor(line_body[j],line_body[i]);
-            mat->values[(i * mat->width) + j].x=force_f*temp.x;
-            mat->values[(i * mat->width) + j].y=force_f*temp.y;
-            mat->values[(i * mat->width) + j].z=force_f*temp.z;
-        }
-    } */
-/* 
-    //#pragma omp parallel for
-    for(int i=0; i<NUM_BODIES; i++){
-        for(int j=0; j<NUM_BODIES; j++){
-            force_f=(G*line_body[i].m*line_body[j].m)/sqr_module(module(diff(line_body[j],line_body[i])));
-            temp=versor(line_body[j],line_body[i]);
-            f[i][j].x=force_f*temp.x;
-            f[i][j].y=force_f*temp.y;
-            f[i][j].z=force_f*temp.z;
-        }
-    } */
-
-
-    line_body[1].x=0;
-    line_body[1].y=0;
-    line_body[1].z=0;
-    line_body[2].x=1;
-    line_body[2].y=-5;
-    line_body[2].z=1;
-
-    line_body[3]=versor(line_body[2],line_body[1]);
-    printf("%f \n", module(line_body[2]));
-    printf("versor: %f %f %f", line_body[3].x, line_body[3].y, line_body[3].z);
-   
-=======
     free(mat->values);
     free(mat);
->>>>>>> working
    return 0;
 }
