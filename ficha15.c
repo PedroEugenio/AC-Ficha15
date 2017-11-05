@@ -131,6 +131,7 @@ int main(){
 
     struct force a[NUM_BODIES];
     struct force v[NUM_BODIES];
+    struct force p[NUM_BODIES];
 
     struct force fi[NUM_BODIES];
 
@@ -188,11 +189,11 @@ int main(){
 
     clock_gettime(CLOCK_MONOTONIC, &start);
     // Prints all the values for f[i][j]
-    for(int i=0; i<NUM_BODIES; i++){
+    /* for(int i=0; i<NUM_BODIES; i++){
         for(int j=0; j<NUM_BODIES; j++){
             printf("f[%i][%i]: x: %.10f y: %.10f z: %.10f \n",i,j, mat->values[(i * mat->width) + j].x,mat->values[(i * mat->width) + j].y=force*temp.y,mat->values[(i * mat->width) + j].z=force*temp.z);
         }
-    }
+    } */
     clock_gettime(CLOCK_MONOTONIC, &end);
     printf("Total time: %LF s \n", timespecInS(timespecDiff(end, start)));
 
@@ -215,11 +216,32 @@ int main(){
     a[0].z=0;
     #pragma omp parallel for
     for(int i=0; i<NUM_BODIES ; i++){
-        for(int j=0; j<NUM_BODIES && j!=i; j++){
             a[i].x=fi[i].x/line_body[i].m;
             a[i].y=fi[i].y/line_body[i].m;
             a[i].z=fi[i].z/line_body[i].m;
-        }
+    }
+    // Calculation of velocity
+    v[0].x=0;
+    v[0].y=0;
+    v[0].z=0;
+    for(int i=1; i<NUM_BODIES ; i++){
+            v[i].x=v[i-1].x+a[i].x*init.delta;
+            v[i].y=v[i-1].y+a[i].y*init.delta;
+            v[i].z=v[i-1].y+a[i].z*init.delta;
+    }
+
+    for(int i=0; i<NUM_BODIES; i++){
+            printf("v[%i]: x: %.10f y: %.10f z: %.10f \n",i,v[i].x, v[i].y, v[i].z);
+    }
+
+    //New Positions
+    p[0].x=0;
+    p[0].y=0;
+    p[0].z=0;
+    for(int i=1; i<NUM_BODIES ; i++){
+        p[i].x=p[i-1].x+v[i].x*init.delta;
+        p[i].y=p[i-1].y+v[i].y*init.delta;
+        p[i].z=p[i-1].y+v[i].z*init.delta;
     }
 
     printf("End of program! \n");
