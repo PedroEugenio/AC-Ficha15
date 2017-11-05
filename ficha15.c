@@ -17,10 +17,16 @@ struct data{
     float m;
 };
 
-struct force{
+typedef struct force{
     float x;
     float y;
     float z;
+}FORCE;
+
+struct Matrix{
+    FORCE * values;
+    int width;
+    int height;
 };
 
 struct initial_conditions{
@@ -92,9 +98,13 @@ int main(){
 
     struct data line_body[NUM_BODIES];  // Array with data from each body
     struct data temp;
+
     struct force f[NUM_BODIES][NUM_BODIES];
-    float force;
+    float force_f;
     struct force fi[NUM_BODIES];
+
+    struct Matrix *mat;
+
     int i=0;
     struct initial_conditions init;
 
@@ -126,19 +136,39 @@ int main(){
         printf("%.1f %.1f %.1f %.1f \n", line_body[i].x, line_body[i].y, line_body[i].z, line_body[i].m);
     }
 
+    /* // The total number of elements in the matrix is
+    // the number of columns times the number of rows
+    mat->values = malloc(NUM_BODIES * NUM_BODIES * sizeof(struct force));
+    if (mat->values == NULL) {
+        fprintf(stderr, "Out-of-memory");
+    }
+    mat->width  = NUM_BODIES;
+    mat->height = NUM_BODIES; */
+
+    /* //#pragma omp parallel for
+    for(int i=0; i<NUM_BODIES; i++){
+        for(int j=0; j<NUM_BODIES; j++){
+            force_f=(G*line_body[i].m*line_body[j].m)/sqr_module(module(diff(line_body[j],line_body[i])));
+            temp=versor(line_body[j],line_body[i]);
+            mat->values[(i * mat->width) + j].x=force_f*temp.x;
+            mat->values[(i * mat->width) + j].y=force_f*temp.y;
+            mat->values[(i * mat->width) + j].z=force_f*temp.z;
+        }
+    } */
+/* 
     //#pragma omp parallel for
     for(int i=0; i<NUM_BODIES; i++){
         for(int j=0; j<NUM_BODIES; j++){
-            force=(G*line_body[i].m*line_body[j].m)/sqr_module(module(diff(line_body[j],line_body[i])));
+            force_f=(G*line_body[i].m*line_body[j].m)/sqr_module(module(diff(line_body[j],line_body[i])));
             temp=versor(line_body[j],line_body[i]);
-            f[i][j].x=force*temp.x;
-            f[i][j].y=force*temp.y;
-            f[i][j].z=force*temp.z;
+            f[i][j].x=force_f*temp.x;
+            f[i][j].y=force_f*temp.y;
+            f[i][j].z=force_f*temp.z;
         }
-    }
+    } */
 
 
-    /* line_body[1].x=0;
+    line_body[1].x=0;
     line_body[1].y=0;
     line_body[1].z=0;
     line_body[2].x=1;
@@ -147,7 +177,7 @@ int main(){
 
     line_body[3]=versor(line_body[2],line_body[1]);
     printf("%f \n", module(line_body[2]));
-    printf("versor: %f %f %f", line_body[3].x, line_body[3].y, line_body[3].z); */
+    printf("versor: %f %f %f", line_body[3].x, line_body[3].y, line_body[3].z);
    
    return 0;
 }
