@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+#include <time.h>
 
 #ifdef _OPENMP
     #include<omp.h>
@@ -23,6 +24,40 @@ struct initial_conditions{
     int delta;
 };
 
+typedef struct force{
+    float x;
+    float y;
+    float z;
+}FORCE;
+
+struct Matrix{
+    FORCE * values;
+    int width;
+    int height;
+};
+
+////////////////////////////////////////////////////////////////////////////
+struct timespec timespecDiff(struct timespec a, struct timespec b)
+{
+	struct timespec result;
+	if ((a.tv_nsec - b.tv_nsec) < 0)
+	{
+		result.tv_sec = a.tv_sec - b.tv_sec - 1;
+		result.tv_nsec = 1E9 + a.tv_nsec - b.tv_nsec;
+	}
+	else
+	{
+		result.tv_sec = a.tv_sec - b.tv_sec;
+		result.tv_nsec = a.tv_nsec - b.tv_nsec;
+	}
+	return result;
+}
+
+long double timespecInS(struct timespec a)
+{
+	return (long double)(a.tv_sec + a.tv_nsec / 1E9);
+}
+////////////////////////////////////////////////////////////////////////////
 
 struct data diff(struct data s2, struct data s1){
     struct data temp;
@@ -85,12 +120,16 @@ struct data versor(struct data s2, struct data s1){
 
 int main(){
 
+    struct timespec start, end;
+
     struct data line_body[NUM_BODIES];  // Array with data from each body
     struct data temp;
     int i=0;
     struct initial_conditions init;
 
     float force;
+
+    struct Matrix *mat;
 
 
 
@@ -116,34 +155,44 @@ int main(){
        
    fclose(fptr);
    printf("Closing the file \n");
- 
-    /* // Print initial values (total time and delta time)
-    printf("%i %i\n", init.total_time, init.delta);
-    // Print all values for our variables (x,y,z,m)
-    //pragma for
-    for(int i=0; i<NUM_BODIES; i++){
-        printf("%.1f %.1f %.1f %.1f \n", line_body[i].x, line_body[i].y, line_body[i].z, line_body[i].m);
-    } */
 
+    // Allocate memory for mat
+    mat=(struct Matrix *)malloc(sizeof(struct Matrix));
+    // The total number of elements in the matrix is
+    // the number of columns times the number of rows
+    mat->values =(FORCE *) malloc(NUM_BODIES * NUM_BODIES * sizeof(FORCE));
+    if (mat->values == NULL) {
+        fprintf(stderr, "Out-of-memory");
+    }
+    mat->width  = NUM_BODIES;
+    mat->height = NUM_BODIES;
+
+    clock_gettime(CLOCK_MONOTONIC, &start);
     #pragma omp parallel for
     for(int i=0; i<NUM_BODIES; i++){
         for(int j=0; j<NUM_BODIES; j++){
             force=(G*line_body[i].m*line_body[j].m)/sqr_module(module(diff(line_body[j],line_body[i])));
             temp=versor(line_body[j],line_body[i]);
-            printf("f[%i][%i] = %f \n", i, j, force);
+            mat->values[(i * mat->width) + j].x=force*temp.x;
+            mat->values[(i * mat->width) + j].y=force*temp.y;
+            mat->values[(i * mat->width) + j].z=force*temp.z;
         }
-}
+    }
+    clock_gettime(CLOCK_MONOTONIC, &end);
+    printf("Total time: %LF s \n", timespecInS(timespecDiff(end, start)));
 
-    /* line_body[1].x=0;
-    line_body[1].y=0;
-    line_body[1].z=0;
-    line_body[2].x=1;
-    line_body[2].y=-5;
-    line_body[2].z=1;
+    clock_gettime(CLOCK_MONOTONIC, &start);
+    // Prints all the values for f[i][j]
+    #pragma omp parallel for
+    for(int i=0; i<NUM_BODIES; i++){
+        for(int j=0; j<NUM_BODIES; j++){
+            printf("f[%i][%i]: x: %.10f y: %.10f z: %.10f \n",i,j, mat->values[(i * mat->width) + j].x,mat->values[(i * mat->width) + j].y=force*temp.y,mat->values[(i * mat->width) + j].z=force*temp.z);
+        }
+    }
+    clock_gettime(CLOCK_MONOTONIC, &end);
+    printf("Total time: %LF s \n", timespecInS(timespecDiff(end, start)));
 
-    line_body[3]=versor(line_body[2],line_body[1]);
-    printf("%f \n", module(line_body[2]));
-    printf("versor: %f %f %f", line_body[3].x, line_body[3].y, line_body[3].z); */
-   
+    free(mat->values);
+    free(mat);
    return 0;
 }
