@@ -2,14 +2,25 @@
 #include <stdio.h>
 #include <math.h>
 
+#ifdef _OPENMP
+    #include<omp.h>
+#endif
+
 #define NUM_BODIES_PARAM 4002
 #define NUM_BODIES 1000
+#define G 6.674E-11
 
 struct data{
     float x;
     float y;
     float z;
     float m;
+};
+
+struct force{
+    float x;
+    float y;
+    float z;
 };
 
 struct initial_conditions{
@@ -80,6 +91,10 @@ struct data versor(struct data s2, struct data s1){
 int main(){
 
     struct data line_body[NUM_BODIES];  // Array with data from each body
+    struct data temp;
+    struct force f[NUM_BODIES][NUM_BODIES];
+    float force;
+    struct force fi[NUM_BODIES];
     int i=0;
     struct initial_conditions init;
 
@@ -104,14 +119,24 @@ int main(){
        
    fclose(fptr);
 
- 
     // Print initial values (total time and delta time)
     printf("%i %i\n", init.total_time, init.delta);
     // Print all values for our variables (x,y,z,m)
-    //pragma for
     for(int i=0; i<NUM_BODIES; i++){
         printf("%.1f %.1f %.1f %.1f \n", line_body[i].x, line_body[i].y, line_body[i].z, line_body[i].m);
     }
+
+    //#pragma omp parallel for
+    for(int i=0; i<NUM_BODIES; i++){
+        for(int j=0; j<NUM_BODIES; j++){
+            force=(G*line_body[i].m*line_body[j].m)/sqr_module(module(diff(line_body[j],line_body[i])));
+            temp=versor(line_body[j],line_body[i]);
+            f[i][j].x=force*temp.x;
+            f[i][j].y=force*temp.y;
+            f[i][j].z=force*temp.z;
+        }
+    }
+
 
     /* line_body[1].x=0;
     line_body[1].y=0;
