@@ -220,6 +220,9 @@ int main(){
             a[i].y=fi[i].y/line_body[i].m;
             a[i].z=fi[i].z/line_body[i].m;
     }
+    /* for(int i=0; i<NUM_BODIES; i++){
+        printf("a[%i]: x: %.10f y: %.10f z: %.10f \n",i,a[i].x, a[i].y, a[i].z);
+    } */
     // Calculation of velocity
     v[0].x=0;
     v[0].y=0;
@@ -230,9 +233,9 @@ int main(){
             v[i].z=v[i-1].y+a[i].z*init.delta;
     }
 
-    for(int i=0; i<NUM_BODIES; i++){
+    /* for(int i=0; i<NUM_BODIES; i++){
             printf("v[%i]: x: %.10f y: %.10f z: %.10f \n",i,v[i].x, v[i].y, v[i].z);
-    }
+    } */
 
     //New Positions
     p[0].x=0;
@@ -244,6 +247,9 @@ int main(){
         p[i].z=p[i-1].y+v[i].z*init.delta;
     }
 
+    for(int i=0; i<NUM_BODIES; i++){
+        printf("p[%i]: x: %.10f y: %.10f z: %.10f \n",i,p[i].x, p[i].y, p[i].z);
+    }
     printf("End of program! \n");
 
 
