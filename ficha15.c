@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
 
 #define NUM_BODIES_PARAM 4002
 #define NUM_BODIES 1000
@@ -15,6 +16,71 @@ struct initial_conditions{
     int total_time;
     int delta;
 };
+
+
+struct data diff(struct data s2, struct data s1){
+    struct data temp;
+
+    temp.x=s2.x-s1.x;
+    temp.y=s2.y-s1.y;
+    temp.z=s2.z-s1.z;
+
+    return temp;
+}
+
+float module(struct data temp){
+    return sqrt((temp.x * temp.x) + (temp.y * temp.y) + (temp.z * temp.z));
+}
+
+float sqr_module(float mod){
+    return mod*mod;
+}
+
+struct data versor(struct data s2, struct data s1){
+    struct data vec, temp;
+    vec=diff(s2,s1);
+    float denum = module(vec);
+    temp.x=vec.x/denum;
+    temp.y=vec.y/denum;
+    temp.z=vec.z/denum;
+
+    // To make a unit vector
+    if(temp.x < 0){
+        temp.x = -1.0;
+    }
+    else if(temp.x > 0){
+        temp.x = 1.0;
+    }
+    else{
+        temp.x = 0.0;
+    }
+    if(temp.y < 0){
+        temp.y = -1.0;
+    }
+    else if(temp.y > 0){
+        temp.y = 1.0;
+    }
+    else{
+        temp.y = 0.0;
+    }
+    if(temp.z < 0){
+        temp.z = -1.0;
+    }
+    else if(temp.z > 0){
+        temp.z = 1.0;
+    }
+    else{
+        temp.z = 0.0;
+    }
+
+    return temp;
+}
+
+
+void open_file(){
+    
+}
+
 
 int main(){
 
@@ -53,6 +119,17 @@ int main(){
 
     
    fclose(fptr);
+
+    /* line_body[1].x=0;
+    line_body[1].y=0;
+    line_body[1].z=0;
+    line_body[2].x=1;
+    line_body[2].y=-5;
+    line_body[2].z=1;
+
+    line_body[3]=versor(line_body[2],line_body[1]);
+    printf("%f \n", module(line_body[2]));
+    printf("versor: %f %f %f", line_body[3].x, line_body[3].y, line_body[3].z); */
    
    return 0;
 }
