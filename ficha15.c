@@ -10,7 +10,7 @@
 #define NUM_BODIES_PARAM 4002
 #define NUM_BODIES 1000
 
-#define G 6.674E-6
+#define G 6.674E-9
 
 struct data{
     float x;
