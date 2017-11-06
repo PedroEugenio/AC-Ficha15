@@ -1,0 +1,2000 @@
+0.0000000000 0.0000000000 0.0000000000 
+
+-0.0000007618 -0.0000007618 0.0000007618 
+
+-0.0000038460 0.0000007987 -0.0000018781 
+
+-0.0000059771 0.0000033402 0.0000007405 
+
+-0.0000064477 0.0000069414 0.0000037380 
+
+-0.0000572985 0.0000573213 0.0000582450 
+
+-0.0001073969 0.0001080566 0.0001085677 
+
+-0.0001572923 0.0001641680 0.0001616685 
+
+-0.0002104141 0.0002180919 0.0002229268 
+
+-0.0003470533 0.0001915719 0.0001955351 
+
+-0.0004997051 0.0001976953 0.0001613932 
+
+-0.0006535439 0.0002062787 0.0001998408 
+
+-0.0007631890 0.0001944247 0.0001650887 
+
+-0.0008877030 0.0001670299 0.0001898303 
+
+-0.0010191598 0.0001465779 0.0001326924 
+
+-0.0011706430 0.0001124763 0.0001440726 
+
+-0.0013122859 0.0000485067 0.0000941426 
+
+-0.0014681311 -0.0000547768 -0.0000547329 
+
+-0.0016340832 -0.0001407145 -0.0001762645 
+
+-0.0018029236 -0.0002189548 -0.0002432711 
+
+-0.0021260215 -0.0004429666 -0.0004743823 
+
+-0.0024245991 -0.0006526598 -0.0006954123 
+
+-0.0027189534 -0.0008227195 -0.0008767716 
+
+-0.0029940850 -0.0009716998 -0.0009842096 
+
+-0.0032827978 -0.0010862568 -0.0011357007 
+
+-0.0035211055 -0.0012400891 -0.0011647157 
+
+-0.0037117824 -0.0013737272 -0.0013737488 
+
+-0.0038795935 -0.0014686536 -0.0014818645 
+
+-0.0040432005 -0.0016143456 -0.0015919487 
+
+-0.0041923812 -0.0017432175 -0.0018079043 
+
+-0.0043427339 -0.0018274998 -0.0018506453 
+
+-0.0045330748 -0.0018642112 -0.0019009934 
+
+-0.0047320276 -0.0018817999 -0.0019161262 
+
+-0.0049690446 -0.0018862835 -0.0018672799 
+
+-0.0051994189 -0.0019468655 -0.0018906528 
+
+-0.0054261284 -0.0020124621 -0.0019884254 
+
+-0.0056440779 -0.0021316048 -0.0020981031 
+
+-0.0059112501 -0.0023736020 -0.0023647479 
+
+-0.0061284490 -0.0026018908 -0.0026582973 
+
+-0.0063366685 -0.0028325669 -0.0028264108 
+
+-0.0065703234 -0.0030074613 -0.0030880186 
+
+-0.0068052611 -0.0032296870 -0.0031612576 
+
+-0.0070192018 -0.0034358094 -0.0034535727 
+
+-0.0072559547 -0.0036387835 -0.0036366375 
+
+-0.0073694554 -0.0038359023 -0.0036866304 
+
+-0.0078933407 -0.0038926948 -0.0039127371 
+
+-0.0083870310 -0.0039223377 -0.0039798864 
+
+-0.0089047085 -0.0039894548 -0.0039743278 
+
+-0.0094148656 -0.0041388911 -0.0040125740 
+
+-0.0099136541 -0.0043649347 -0.0042528850 
+
+-0.0104378797 -0.0045743044 -0.0045794635 
+
+-0.0109070064 -0.0047837179 -0.0047336686 
+
+-0.0113635371 -0.0049989796 -0.0049859383 
+
+-0.0118016154 -0.0051523717 -0.0052297143 
+
+-0.0121765966 -0.0052478411 -0.0053257653 
+
+-0.0124843968 -0.0053138100 -0.0052961330 
+
+-0.0127565032 -0.0053369775 -0.0053358972 
+
+-0.0129769249 -0.0054290034 -0.0053839199 
+
+-0.0132463733 -0.0055305944 -0.0055443626 
+
+-0.0133740185 -0.0057209753 -0.0056277411 
+
+-0.0137054352 -0.0057321843 -0.0061166938 
+
+-0.0140891159 -0.0057941624 -0.0057546804 
+
+-0.0144733135 -0.0058084703 -0.0058472892 
+
+-0.0148129771 -0.0058695665 -0.0057710367 
+
+-0.0151410876 -0.0060000289 -0.0056582680 
+
+-0.0156657733 -0.0060159150 -0.0059481603 
+
+-0.0161975287 -0.0061684740 -0.0060424083 
+
+-0.0167025346 -0.0063663339 -0.0063693272 
+
+-0.0174059626 -0.0067556235 -0.0063937372 
+
+-0.0184401684 -0.0071282354 -0.0068329684 
+
+-0.0194964651 -0.0075109070 -0.0075229593 
+
+-0.0204624534 -0.0079589169 -0.0078184241 
+
+-0.0214481540 -0.0083912816 -0.0083612381 
+
+-0.0224741958 -0.0087987650 -0.0087383529 
+
+-0.0235054716 -0.0091581652 -0.0090774354 
+
+-0.0244811904 -0.0095342686 -0.0095329890 
+
+-0.0254405625 -0.0098077524 -0.0099293776 
+
+-0.0263240244 -0.0101237781 -0.0101504615 
+
+-0.0272144042 -0.0103264898 -0.0104116434 
+
+-0.0280847661 -0.0104604773 -0.0105445748 
+
+-0.0289733522 -0.0106579363 -0.0105300304 
+
+-0.0297293030 -0.0109602744 -0.0108368183 
+
+-0.0305581372 -0.0112005761 -0.0112856887 
+
+-0.0313991457 -0.0112690590 -0.0113456184 
+
+-0.0323088095 -0.0112209320 -0.0113207651 
+
+-0.0332204513 -0.0110896854 -0.0111342836 
+
+-0.0340292230 -0.0108882105 -0.0108494516 
+
+-0.0348401479 -0.0105910562 -0.0107809557 
+
+-0.0356540419 -0.0103604151 -0.0104133217 
+
+-0.0365639739 -0.0100945495 -0.0101133818 
+
+-0.0375737883 -0.0098526804 -0.0099068731 
+
+-0.0386093259 -0.0095359627 -0.0096082585 
+
+-0.0398012213 -0.0095335692 -0.0089681884 
+
+-0.0410126708 -0.0095228748 -0.0093931602 
+
+-0.0420845523 -0.0097214077 -0.0095641073 
+
+-0.0431086645 -0.0100658815 -0.0099238409 
+
+-0.0441651382 -0.0103335483 -0.0104623996 
+
+-0.0452137664 -0.0106511256 -0.0107012494 
+
+-0.0463357382 -0.0108766397 -0.0109473979 
+
+-0.0475396216 -0.0111843217 -0.0111124702 
+
+-0.0487587117 -0.0114759468 -0.0115578147 
+
+-0.0501047559 -0.0116763683 -0.0118012112 
+
+-0.0513770878 -0.0117914993 -0.0119063053 
+
+-0.0525516607 -0.0118229166 -0.0117587298 
+
+-0.0536127239 -0.0117409080 -0.0118473591 
+
+-0.0546859391 -0.0117248558 -0.0116198454 
+
+-0.0558934174 -0.0115636690 -0.0115648052 
+
+-0.0567410178 -0.0112487366 -0.0112601155 
+
+-0.0569645651 -0.0103655159 -0.0110463435 
+
+-0.0570017733 -0.0096817501 -0.0096123051 
+
+-0.0571196042 -0.0089753522 -0.0091028707 
+
+-0.0572667420 -0.0083522648 -0.0082967328 
+
+-0.0575922243 -0.0075879078 -0.0077346535 
+
+-0.0578176640 -0.0068505183 -0.0069523258 
+
+-0.0581718460 -0.0060489210 -0.0061117597 
+
+-0.0585574545 -0.0051908176 -0.0051948731 
+
+-0.0590385348 -0.0044089016 -0.0042939247 
+
+-0.0595851690 -0.0037737370 -0.0036090238 
+
+-0.0601556674 -0.0032003119 -0.0030321667 
+
+-0.0609775744 -0.0029798762 -0.0024833716 
+
+-0.0619470663 -0.0027568559 -0.0027205511 
+
+-0.0628942698 -0.0025885957 -0.0025630959 
+
+-0.0639375374 -0.0024166577 -0.0024665138 
+
+-0.0648933500 -0.0021889710 -0.0022722469 
+
+-0.0657650381 -0.0022317024 -0.0019874135 
+
+-0.0668414161 -0.0021340430 -0.0025102056 
+
+-0.0678500533 -0.0020385971 -0.0021494434 
+
+-0.0684679970 -0.0023441063 -0.0020518333 
+
+-0.0686897561 -0.0023188475 -0.0023555257 
+
+-0.0687232018 -0.0020522121 -0.0026392655 
+
+-0.0686962456 -0.0016491339 -0.0019431791 
+
+-0.0684827417 -0.0011437332 -0.0013966577 
+
+-0.0684251338 -0.0007346409 -0.0005709382 
+
+-0.0683468431 -0.0002531252 -0.0000214525 
+
+-0.0680971220 0.0003955463 0.0002483338 
+
+-0.0676842332 0.0003466687 0.0011240707 
+
+-0.0672062486 0.0005041751 0.0004698965 
+
+-0.0665666610 0.0003538859 0.0002818276 
+
+-0.0660241470 0.0001780379 0.0001362353 
+
+-0.0656837150 0.0000088120 0.0000020656 
+
+-0.0656485781 0.0001294687 -0.0001094886 
+
+-0.0658060014 0.0005010137 -0.0000396371 
+
+-0.0661242306 0.0010806727 0.0009531166 
+
+-0.0666063502 0.0015820791 0.0016514247 
+
+-0.0670981407 0.0022634540 0.0020224056 
+
+-0.0675424561 0.0029478217 0.0028153716 
+
+-0.0677610636 0.0036564735 0.0035882462 
+
+-0.0677541122 0.0043440689 0.0042781010 
+
+-0.0676627383 0.0050366167 0.0050689084 
+
+-0.0675997511 0.0057615233 0.0058939136 
+
+-0.0676036328 0.0063255574 0.0064730505 
+
+-0.0675760806 0.0071071479 0.0068353768 
+
+-0.0674421862 0.0077835489 0.0078041307 
+
+-0.0672152936 0.0084564872 0.0083856992 
+
+-0.0670144185 0.0092786066 0.0091094626 
+
+-0.0670234039 0.0100748232 0.0100959893 
+
+-0.0667281374 0.0113162203 0.0105231432 
+
+-0.0663409084 0.0125871412 0.0127010318 
+
+-0.0655800775 0.0140756359 0.0137906512 
+
+-0.0652210787 0.0153066376 0.0155991279 
+
+-0.0649809092 0.0164589453 0.0164791532 
+
+-0.0647823513 0.0176782794 0.0176310167 
+
+-0.0644749403 0.0188175812 0.0188283455 
+
+-0.0643015951 0.0200361256 0.0198945664 
+
+-0.0639321357 0.0210570507 0.0212441012 
+
+-0.0633489043 0.0222069416 0.0220717601 
+
+-0.0628251061 0.0231197681 0.0233824719 
+
+-0.0621125139 0.0241055433 0.0239315815 
+
+-0.0613564812 0.0251451656 0.0253788140 
+
+-0.0606737062 0.0263786092 0.0261413250 
+
+-0.0600387864 0.0276724286 0.0276129637 
+
+-0.0593418144 0.0288986377 0.0288923644 
+
+-0.0586389080 0.0301659070 0.0299181994 
+
+-0.0578896217 0.0316684134 0.0314747356 
+
+-0.0568574257 0.0331427380 0.0330646820 
+
+-0.0563620068 0.0351621583 0.0350705832 
+
+-0.0572823063 0.0386832133 0.0359823555 
+
+-0.0581121594 0.0418660901 0.0419591255 
+
+-0.0589018054 0.0450808108 0.0451204740 
+
+-0.0596029498 0.0481442884 0.0484299622 
+
+-0.0601771958 0.0509994738 0.0511849299 
+
+-0.0602315180 0.0535360724 0.0533687659 
+
+-0.0606322475 0.0558775179 0.0561084002 
+
+-0.0618558563 0.0580116771 0.0575237907 
+
+-0.0633038357 0.0602364689 0.0600760244 
+
+-0.0645249858 0.0625927225 0.0626882538 
+
+-0.0656372160 0.0649315417 0.0649594739 
+
+-0.0667491481 0.0672479272 0.0671831742 
+
+-0.0681566298 0.0695137754 0.0698118582 
+
+-0.0696528107 0.0717369244 0.0718085393 
+
+-0.0710820779 0.0739810392 0.0740700588 
+
+-0.0723113790 0.0761856735 0.0762081519 
+
+-0.0735891834 0.0781444609 0.0782867745 
+
+-0.0749451146 0.0803920180 0.0801834315 
+
+-0.0761956945 0.0826501250 0.0825505778 
+
+-0.0770937651 0.0850782990 0.0850078687 
+
+-0.0772429705 0.0865677968 0.0868165269 
+
+-0.0774345845 0.0881262869 0.0881277397 
+
+-0.0777359307 0.0896994248 0.0898121297 
+
+-0.0785607472 0.0917540491 0.0909256563 
+
+-0.0794006661 0.0939665437 0.0937553644 
+
+-0.0803137273 0.0962850004 0.0960748494 
+
+-0.0813151672 0.0986657888 0.0988279730 
+
+-0.0823288038 0.1011654586 0.1013439074 
+
+-0.0834138319 0.1036280394 0.1034001857 
+
+-0.0846156776 0.1061202064 0.1061086357 
+
+-0.0857341811 0.1083620861 0.1086526811 
+
+-0.0867643058 0.1107905582 0.1108063459 
+
+-0.0879761130 0.1132490784 0.1133540571 
+
+-0.0893262178 0.1156241745 0.1155801788 
+
+-0.0905192792 0.1177315563 0.1179751605 
+
+-0.0917797014 0.1200904176 0.1199913993 
+
+-0.0928425565 0.1224850789 0.1223738566 
+
+-0.0941094235 0.1251052171 0.1247218773 
+
+-0.0950241685 0.1281103492 0.1286022514 
+
+-0.0965867937 0.1305483729 0.1305171400 
+
+-0.0982617959 0.1330540627 0.1329016685 
+
+-0.0998361781 0.1352178752 0.1352380365 
+
+-0.0990485102 0.1387333572 0.1361101121 
+
+-0.0984439105 0.1420815438 0.1422056407 
+
+inf -inf inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -inf -inf 
+
+inf -nan -inf 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+
+-nan -nan -nan 
+

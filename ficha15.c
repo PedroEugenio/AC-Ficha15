@@ -10,7 +10,7 @@
 #define NUM_BODIES_PARAM 4002
 #define NUM_BODIES 1000
 
-#define G 6.674E-1
+#define G 6.674E-6
 
 struct data{
     float x;
@@ -187,15 +187,15 @@ int main(){
     clock_gettime(CLOCK_MONOTONIC, &end);
     printf("Total time: %LF s \n", timespecInS(timespecDiff(end, start)));
 
-    clock_gettime(CLOCK_MONOTONIC, &start);
+    /* clock_gettime(CLOCK_MONOTONIC, &start);
     // Prints all the values for f[i][j]
-    /* for(int i=0; i<NUM_BODIES; i++){
+    for(int i=0; i<NUM_BODIES; i++){
         for(int j=0; j<NUM_BODIES; j++){
             printf("f[%i][%i]: x: %.10f y: %.10f z: %.10f \n",i,j, mat->values[(i * mat->width) + j].x,mat->values[(i * mat->width) + j].y=force*temp.y,mat->values[(i * mat->width) + j].z=force*temp.z);
         }
-    } */
+    }
     clock_gettime(CLOCK_MONOTONIC, &end);
-    printf("Total time: %LF s \n", timespecInS(timespecDiff(end, start)));
+    printf("Total time: %LF s \n", timespecInS(timespecDiff(end, start))); */
 
     // Calculation of fi force
     fi[0].x=0;
@@ -247,12 +247,24 @@ int main(){
         p[i].z=p[i-1].y+v[i].z*init.delta;
     }
 
-    for(int i=0; i<NUM_BODIES; i++){
+    /* for(int i=0; i<NUM_BODIES; i++){
         printf("p[%i]: x: %.10f y: %.10f z: %.10f \n",i,p[i].x, p[i].y, p[i].z);
-    }
+    } */
     printf("End of program! \n");
-
-
+	
+	/* Export coord. of the new position to a file (newposition.dat)*/
+	
+	FILE *newposition;
+	newposition = fopen ("newposition.dat", "w");
+	
+	for(int i=0; i<NUM_BODIES; i++){
+       	fprintf(newposition,"%.10f %.10f %.10f \n\n",p[i].x, p[i].y, p[i].z);
+		
+    }
+    
+	fclose(newposition);
+	
+	
     free(mat->values);
     free(mat);
    return 0;
